@@ -161,6 +161,9 @@ header nav div {
 header nav div a {
   text-decoration: none;
 }
+header nav div a:visited {
+  color: black;
+}
 header .hero {
   border-radius: 3px;
   width: 80%;
