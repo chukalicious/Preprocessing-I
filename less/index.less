@@ -80,6 +80,7 @@ header {
 	.flexcolumn(); 
 	width: 100%; 
 	
+	
 	nav {
 		width: 100%;
 		display: flex;
@@ -93,17 +94,18 @@ header {
 	}
 	
 	.hero {
-		border: 1px solid black;
-		border-radius: 5px;
+		
+		border-radius: 3px;
 		width: 80%;
 		margin: 0 auto 2rem auto;
+		background-color: @headergray; 
 
 		img {
-			margin: 3rem 1.5rem 2rem 1.5rem;
+			margin: 5rem 1.5rem .5rem 2.5rem;
 		}
 
 		h1 {
-			margin: 2rem auto;
+			margin: .5rem auto 1rem auto;
 			font-size: 3rem;
 			width: 90%;
 		}
@@ -114,6 +116,25 @@ header {
 			border-bottom: @buttongray solid .5px;
 			padding-bottom: 1.5rem;
 			margin: 0 auto 2rem auto;
+		}
+
+		.call-to-action {
+			.flexcolumn(); 
+			justify-content: flex-start;
+			p {
+				width: 90%;
+				margin: 0 auto 1rem auto;
+			}
+
+			button {
+				.darkgraycombo();
+				margin: 1rem auto 4rem auto;
+				font-size: 1.5rem;
+				padding: 1rem;
+				text-transform: capitalize;
+				border-radius: 7px;
+			}
+			
 		}
 
 	}
