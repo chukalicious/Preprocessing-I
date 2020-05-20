@@ -147,6 +147,11 @@ header {
 
 }
 
+.h3styling {
+	.title-spacing(); 
+	font-size: 1.5rem;
+}
+
 .title-spacing {
 	padding: 1rem;
 }
@@ -159,6 +164,7 @@ header {
 
 article {
 	display: flex;
+	margin-bottom: 2rem;
 
 	section {
 		.section-column(); 	
@@ -175,8 +181,7 @@ article {
 	}
 
 	h3 {
-		.title-spacing();
-		font-size: 1.5em;
+		.h3styling(); 
 	}
 
 	ul {
@@ -193,6 +198,15 @@ article {
 		}
 	}
 
+}
+
+.bottom-section {
+	.flexcolumn(); 
+	border: red 2px solid;
+
+	h3 {
+		.h3styling(); 
+	}
 }
 
 

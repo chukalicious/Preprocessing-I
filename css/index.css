@@ -203,6 +203,10 @@ header .hero .call-to-action button {
   text-transform: capitalize;
   border-radius: 7px;
 }
+.h3styling {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
 .title-spacing {
   padding: 1rem;
 }
@@ -213,6 +217,7 @@ header .hero .call-to-action button {
 }
 article {
   display: flex;
+  margin-bottom: 2rem;
 }
 article section {
   width: 50%;
@@ -229,7 +234,7 @@ article h2 {
 }
 article h3 {
   padding: 1rem;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 article ul {
   border-radius: 4px;
@@ -242,4 +247,13 @@ article ul .listspacing {
 article ul li {
   padding: 0.75rem;
   border-bottom: #808080 solid 0.5px;
+}
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  border: red 2px solid;
+}
+.bottom-section h3 {
+  padding: 1rem;
+  font-size: 1.5rem;
 }
