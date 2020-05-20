@@ -197,3 +197,43 @@ header .hero .call-to-action button {
   text-transform: capitalize;
   border-radius: 7px;
 }
+.title-spacing {
+  padding: 1rem;
+}
+.section-column {
+  width: 50%;
+  padding: 1rem 2rem;
+  margin-left: 5.5rem;
+}
+article {
+  display: flex;
+}
+article section {
+  width: 50%;
+  padding: 1rem 2rem;
+  margin-left: 5.5rem;
+}
+article section p {
+  line-height: 1.5rem;
+}
+article h2 {
+  font-size: 2rem;
+  padding: 1rem;
+  margin: auto;
+}
+article h3 {
+  padding: 1rem;
+  font-size: 1.5em;
+}
+article ul {
+  border-radius: 4px;
+  border: #808080 solid 0.5px;
+}
+article ul .listspacing {
+  padding: 0.75rem;
+  border-bottom: #808080 solid 0.5px;
+}
+article ul li {
+  padding: 0.75rem;
+  border-bottom: #808080 solid 0.5px;
+}

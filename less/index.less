@@ -139,9 +139,59 @@ header {
 
 	}
 
+}
+
+.title-spacing {
+	padding: 1rem;
+}
+
+.section-column{
+	width: 50%;
+	padding: 1rem 2rem; 
+	margin-left: 5.5rem;
+}
+
+article {
+	display: flex;
+
+	section {
+		.section-column(); 	
+
+		p{
+			line-height: 1.5rem;
+		}
+	}
+	
+	h2 {
+		font-size: 2rem;
+		.title-spacing(); 
+		margin: auto;
+		
+	}
+
+	h3 {
+		.title-spacing();
+		font-size: 1.5em;
+	}
+
+	ul {
+		border-radius: 4px; 
+		border: @buttongray solid .5px;
+
+		.listspacing{
+			padding: .75rem;
+			border-bottom: @buttongray solid .5px; 
+		}
+	
+		li {
+			.listspacing(); 
+		}
+	}
 
 	
-	
+
+
+
 }
 
 
