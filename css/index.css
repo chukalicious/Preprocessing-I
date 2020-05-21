@@ -270,6 +270,7 @@ body {
 }
 .container article section p {
   line-height: 1.5rem;
+  font-family: 'Lato', sans-serif;
 }
 .container article h2 {
   font-size: 2rem;
