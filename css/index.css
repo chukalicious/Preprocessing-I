@@ -184,6 +184,7 @@ body {
   }
   .container header nav div:hover {
     border: solid #808080 1px;
+    box-shadow: 1px 2px 2px 1px grey;
   }
 }
 .container header .hero {
@@ -210,7 +211,7 @@ body {
 @media (max-width: 500px) {
   .container header .hero {
     width: 95%;
-    margin: 0 auto;
+    margin: 0.3rem auto 0 auto;
     /* border: green 1px solid; */
   }
   .container header .hero section {
