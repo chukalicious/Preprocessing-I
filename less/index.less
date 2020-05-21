@@ -246,10 +246,11 @@ article {
 		}
 	}
 }
+	@tablegray: #F2F2F2; 
 
 .bottom-section {
 	.flexcolumn(); 
-	border: red 2px solid;
+	/* border: red 2px solid; */
 	width: 80%;
 	margin: 0 auto;
 
@@ -258,7 +259,7 @@ article {
 	}
 
 	table {
-		border: blue solid 1px;
+		/* border: blue solid 1px; */
 	}
 
 	.centertable {
@@ -275,19 +276,20 @@ article {
 		width: 100%;
 	}
 
-	@cellpadding: 4rem; 
-
 	table {
 		tr {
+			&:nth-child(2n) {
+				background-color: @tablegray; 
+			}
 			td {
 				.centerrow();
-				border: solid purple 2px; 
-				padding-left: @cellpadding; 
+				/* border: solid purple 2px; */ 
 			}
 		}
 
 		th {
 			.centertable(); 
+			
 		}
 
 		@media (max-width: 500px) {
@@ -299,7 +301,7 @@ article {
 footer {
 	height: 15vh;
 	width: 80%; 
-	margin: 0 auto 2rem auto; 
+	margin: 2.5rem auto 2rem auto; 
 	.darkgraycombo(); 
 	text-align: center;
 	padding-top: 2rem;

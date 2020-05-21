@@ -306,7 +306,7 @@ body {
 .container .bottom-section {
   display: flex;
   flex-direction: column;
-  border: red 2px solid;
+  /* border: red 2px solid; */
   width: 80%;
   margin: 0 auto;
 }
@@ -315,7 +315,7 @@ body {
   font-size: 1.5rem;
 }
 .container .bottom-section table {
-  border: blue solid 1px;
+  /* border: blue solid 1px; */
 }
 .container .bottom-section .centertable {
   font-weight: bold;
@@ -330,11 +330,13 @@ body {
     width: 100%;
   }
 }
+.container .bottom-section table tr:nth-child(2n) {
+  background-color: #F2F2F2;
+}
 .container .bottom-section table tr td {
   padding: 1rem;
   margin: auto;
-  border: solid purple 2px;
-  padding-left: 4rem;
+  /* border: solid purple 2px; */
 }
 .container .bottom-section table th {
   font-weight: bold;
@@ -348,7 +350,7 @@ body {
 .container footer {
   height: 15vh;
   width: 80%;
-  margin: 0 auto 2rem auto;
+  margin: 2.5rem auto 2rem auto;
   color: white;
   background-color: #808080;
   text-align: center;
