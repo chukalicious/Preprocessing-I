@@ -61,62 +61,61 @@ html, body {
 
 .container {
 	
-@headergray: #E9ECEF; 
-@buttongray: #808080; 
-@mobilenavfont: 2.5rem; 
+	@headergray: #E9ECEF; 
+	@buttongray: #808080; 
+	@mobilenavfont: 2.5rem; 
 
 
-.darkgraycombo {
-	color: white;
-	background-color: @buttongray;
-}
-
-.flexcolumn {
-	display: flex;
-	flex-direction: column
-}
-
-header {
-	.flexcolumn(); 
-	width: 100%; 
-	@media (max-width: 500px) {
-		.flexcolumn(); 
-		width: 100%;
+	.darkgraycombo {
+		color: white;
+		background-color: @buttongray;
 	}
-	
-	
-	nav {
-		width: 100%;
+
+	.flexcolumn {
 		display: flex;
-		justify-content: flex-end;
-		
-		div{
-			margin: 1rem 0;
-			padding: 1rem 2rem;
-			a {
-				text-decoration: none;
-				&:visited {
-					color: black;
-				}
-			}
-		}
+		flex-direction: column
+	}
+
+	header {
+		.flexcolumn(); 
+		width: 100%; 
 		@media (max-width: 500px) {
 			.flexcolumn(); 
-			/* border: solid red 1px; */
-			width: 100;
-			text-align: center;
-			div {
-				margin: 0;
-				font-size: @mobilenavfont;
-				&:hover {
-					border: solid @buttongray 1px; 
-					box-shadow: 1px 2px 2px 1px grey;
+			width: 100%;
+		}
+		nav {
+			width: 100%;
+			display: flex;
+			justify-content: flex-end;
+		
+			div{
+				margin: 1rem 0;
+				padding: 1rem 2rem;
+					a {
+						text-decoration: none;
+						&:visited {
+							color: black;
+						}
+					}
 				}
+			@media (max-width: 500px) {
+				.flexcolumn(); 
+				/* border: solid red 1px; */
+				width: 100;
+				text-align: center;
+				
+				div {
+					margin: 0;
+					font-size: @mobilenavfont;
+						&:hover {
+							border: solid @buttongray 1px; 
+							box-shadow: 1px 2px 2px 1px grey;
+						}
+					}
 			}
 		}
-	}
 	
-	.hero {
+		.hero {
 		border-radius: 3px;
 		width: 80%;
 		margin: 0 auto 2rem auto;
@@ -250,22 +249,17 @@ article {
 
 .bottom-section {
 	.flexcolumn(); 
-	/* border: red 2px solid; */
+	border: red 2px solid;
 	width: 80%;
 	margin: 0 auto;
-
-	@media (max-width: 500px) {
-		width: 100%;
-		border: red px solid; 
-	}
 
 	h3 {
 		.h3styling();  
 	}
 
-	/* table {
+	table {
 		border: blue solid 1px;
-	} */
+	}
 
 	.centertable {
 		font-weight: bold; 
@@ -277,24 +271,27 @@ article {
 		margin: auto; 
 	}
 
+	@media (max-width: 500px) {
+		width: 100%;
+	}
+
 	@cellpadding: 4rem; 
 
 	table {
-
-		@media (max-width: 500px) {
-			width: 100%; 
-		}
-
 		tr {
 			td {
 				.centerrow();
-				/* border: solid purple 2px; */ 
+				border: solid purple 2px; 
 				padding-left: @cellpadding; 
 			}
 		}
 
 		th {
 			.centertable(); 
+		}
+
+		@media (max-width: 500px) {
+			width: 100%;
 		}
 	}	
 }
@@ -311,7 +308,7 @@ footer {
 		height: 10vh;
 		width: 100%;
 		margin: 0 auto;
-	}
+		}
 	}
 
 	
