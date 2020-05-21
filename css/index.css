@@ -311,13 +311,13 @@ body {
   /* border: red 2px solid; */
   width: 80%;
   margin: 0 auto;
+  /* table {
+		border: blue solid 1px;
+	} */
 }
 .container .bottom-section h3 {
   padding: 1rem;
   font-size: 1.5rem;
-}
-.container .bottom-section table {
-  /* border: blue solid 1px; */
 }
 .container .bottom-section .centertable {
   font-weight: bold;
