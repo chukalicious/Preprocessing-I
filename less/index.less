@@ -53,6 +53,7 @@ table {
     box-sizing: border-box;
 }
 
+
 html, body {
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
@@ -63,6 +64,7 @@ html, body {
 @headergray: #E9ECEF; 
 @buttongray: #808080; 
 @mobilenavfont: 2.5rem; 
+
 
 .darkgraycombo {
 	color: white;
@@ -234,7 +236,15 @@ article {
 			.listspacing(); 
 		}
 	}
+	@media (max-width: 500px) {
+		.flexcolumn(); 
+		/* border: red solid 1px; */
 
+		section {
+			width: 100%; 
+			margin: 0 auto; 
+		}
+	}
 }
 
 .bottom-section {
