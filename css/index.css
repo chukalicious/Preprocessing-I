@@ -135,66 +135,71 @@ body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
 }
-/* @robotica: font-family: 'Roboto', sans-serif; */
-.darkgraycombo {
+.container .darkgraycombo {
   color: white;
   background-color: #808080;
 }
-.flexcolumn {
+.container .flexcolumn {
   display: flex;
   flex-direction: column;
 }
-header {
+.container header {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-header nav {
+.container header nav {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-header nav div {
+.container header nav div {
   margin: 1rem 0;
   padding: 1rem 2rem;
 }
-header nav div a {
+.container header nav div a {
   text-decoration: none;
 }
-header nav div a:visited {
+.container header nav div a:visited {
   color: black;
 }
-header .hero {
+.container header .hero {
   border-radius: 3px;
   width: 80%;
   margin: 0 auto 2rem auto;
   background-color: #E9ECEF;
 }
-header .hero img {
+.container header .hero img {
   margin: 5rem 1.5rem 0.5rem 2.5rem;
 }
-header .hero h1 {
+@media (max-width: 500px) {
+  .container header .hero img {
+    width: 100px;
+    margin: 0 auto;
+  }
+}
+.container header .hero h1 {
   margin: 0.5rem auto 1rem auto;
   font-size: 3rem;
   width: 90%;
 }
-header .hero h2 {
+.container header .hero h2 {
   font-size: 2rem;
   width: 90%;
   border-bottom: #808080 solid 0.5px;
   padding-bottom: 1.5rem;
   margin: 0 auto 2rem auto;
 }
-header .hero .call-to-action {
+.container header .hero .call-to-action {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-header .hero .call-to-action p {
+.container header .hero .call-to-action p {
   width: 90%;
   margin: 0 auto 1rem auto;
 }
-header .hero .call-to-action button {
+.container header .hero .call-to-action button {
   color: white;
   background-color: #808080;
   margin: 1rem auto 4rem auto;
@@ -203,61 +208,95 @@ header .hero .call-to-action button {
   text-transform: capitalize;
   border-radius: 7px;
 }
-.h3styling {
+.container .h3styling {
   padding: 1rem;
   font-size: 1.5rem;
 }
-.title-spacing {
+.container .title-spacing {
   padding: 1rem;
 }
-.section-column {
+.container .section-column {
   width: 50%;
   padding: 1rem 2rem;
   margin-left: 5.5rem;
 }
-article {
+.container article {
   display: flex;
   margin-bottom: 2rem;
 }
-article section {
+.container article section {
   width: 50%;
   padding: 1rem 2rem;
   margin-left: 5.5rem;
 }
-article section p {
+.container article section p {
   line-height: 1.5rem;
 }
-article h2 {
+.container article h2 {
   font-size: 2rem;
   padding: 1rem;
   margin: auto;
 }
-article h3 {
+.container article h3 {
   padding: 1rem;
   font-size: 1.5rem;
 }
-article ul {
+.container article ul {
   border-radius: 4px;
   border: #808080 solid 0.5px;
 }
-article ul .listspacing {
+.container article ul .listspacing {
   padding: 0.75rem;
   border-bottom: #808080 solid 0.5px;
 }
-article ul li {
+.container article ul li {
   padding: 0.75rem;
   border-bottom: #808080 solid 0.5px;
 }
-.bottom-section {
+.container .bottom-section {
   display: flex;
   flex-direction: column;
-  border: red 2px solid;
+  /* border: red 2px solid; */
+  width: 80%;
+  margin: 0 auto;
+  /* table {
+		border: blue solid 1px;
+	} */
 }
-.bottom-section h3 {
+@media (max-width: 500px) {
+  .container .bottom-section {
+    width: 100%;
+    border: red px solid;
+  }
+}
+.container .bottom-section h3 {
   padding: 1rem;
   font-size: 1.5rem;
 }
-footer {
+.container .bottom-section .centertable {
+  font-weight: bold;
+  padding: 1rem;
+}
+.container .bottom-section .centerrow {
+  padding: 1rem;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .container .bottom-section table {
+    width: 100%;
+  }
+}
+.container .bottom-section table tr td {
+  padding: 1rem;
+  margin: auto;
+  /* border: solid purple 2px; */
+  padding-left: 4rem;
+}
+.container .bottom-section table th {
+  font-weight: bold;
+  padding: 1rem;
+}
+.container footer {
   height: 15vh;
   width: 80%;
   margin: 0 auto 2rem auto;

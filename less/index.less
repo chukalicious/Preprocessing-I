@@ -58,9 +58,8 @@ html, body {
 	font-family: 'Roboto', sans-serif;
 }
 
-/* @robotica: font-family: 'Roboto', sans-serif; */
-
-@headergray: #E9ECEF; 
+.container {
+	@headergray: #E9ECEF; 
 @buttongray: #808080; 
 
 .darkgraycombo {
@@ -105,6 +104,11 @@ header {
 
 		img {
 			margin: 5rem 1.5rem .5rem 2.5rem;
+
+			@media (max-width: 500px){
+				width: 100px;  
+				margin: 0 auto;
+			}
 		}
 
 		h1 {
@@ -199,14 +203,54 @@ article {
 
 .bottom-section {
 	.flexcolumn(); 
-	border: red 2px solid;
+	/* border: red 2px solid; */
+	width: 80%;
+	margin: 0 auto;
+
+	@media (max-width: 500px) {
+		width: 100%;
+		border: red px solid; 
+	}
 
 	h3 {
-		.h3styling(); 
+		.h3styling();  
 	}
+
+	/* table {
+		border: blue solid 1px;
+	} */
+
+	.centertable {
+		font-weight: bold; 
+		padding: 1rem; 
+	}
+	
+	.centerrow {
+		padding: 1rem;
+		margin: auto; 
+	}
+
+	@cellpadding: 4rem; 
+
+	table {
+
+		@media (max-width: 500px) {
+			width: 100%; 
+		}
+
+		tr {
+			td {
+				.centerrow();
+				/* border: solid purple 2px; */ 
+				padding-left: @cellpadding; 
+			}
+		}
+
+		th {
+			.centertable(); 
+		}
+	}	
 }
-
-
 
 footer {
 	height: 15vh;
@@ -216,6 +260,7 @@ footer {
 	text-align: center;
 	padding-top: 2rem;
 	border-radius: 3px;
+	}
 
 }
 
