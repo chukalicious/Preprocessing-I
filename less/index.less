@@ -106,6 +106,9 @@ header {
 			div {
 				margin: 0;
 				font-size: @mobilenavfont;
+				&:hover {
+					border: solid @buttongray 1px; 
+				}
 			}
 		}
 	}
@@ -137,7 +140,7 @@ header {
 		@media (max-width: 500px){
 			width: 95%;  
 			margin: 0 auto;
-			border: green 1px solid;
+			/* border: green 1px solid; */
 
 			section {
 			width: 100%;  
@@ -148,7 +151,11 @@ header {
 					width: 90%;
 					margin: 1rem auto; 
 					text-align: center;
-					border: solid hotpink 1px;  
+					/* border: solid hotpink 1px; */  
+				}
+
+				h1 {
+					text-align: left; 
 				}
 			}
 			
@@ -289,7 +296,14 @@ footer {
 	text-align: center;
 	padding-top: 2rem;
 	border-radius: 3px;
+	@media (max-width: 500px) {
+		height: 10vh;
+		width: 100%;
+		margin: 0 auto;
 	}
+	}
+
+	
 
 }
 

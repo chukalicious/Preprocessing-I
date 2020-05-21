@@ -182,6 +182,9 @@ body {
     margin: 0;
     font-size: 2.5rem;
   }
+  .container header nav div:hover {
+    border: solid #808080 1px;
+  }
 }
 .container header .hero {
   border-radius: 3px;
@@ -208,7 +211,7 @@ body {
   .container header .hero {
     width: 95%;
     margin: 0 auto;
-    border: green 1px solid;
+    /* border: green 1px solid; */
   }
   .container header .hero section {
     width: 100%;
@@ -219,7 +222,10 @@ body {
     width: 90%;
     margin: 1rem auto;
     text-align: center;
-    border: solid hotpink 1px;
+    /* border: solid hotpink 1px; */
+  }
+  .container header .hero section h1 {
+    text-align: left;
   }
 }
 .container header .hero .call-to-action {
@@ -337,4 +343,11 @@ body {
   text-align: center;
   padding-top: 2rem;
   border-radius: 3px;
+}
+@media (max-width: 500px) {
+  .container footer {
+    height: 10vh;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
