@@ -59,8 +59,10 @@ html, body {
 }
 
 .container {
-	@headergray: #E9ECEF; 
+	
+@headergray: #E9ECEF; 
 @buttongray: #808080; 
+@mobilenavfont: 2.5rem; 
 
 .darkgraycombo {
 	color: white;
@@ -75,12 +77,30 @@ html, body {
 header {
 	.flexcolumn(); 
 	width: 100%; 
+	@media (max-width: 500px) {
+		.flexcolumn(); 
+		width: 100%;
+	}
 	
 	
 	nav {
 		width: 100%;
 		display: flex;
 		justify-content: flex-end;
+		
+
+		@media (max-width: 500px) {
+			.flexcolumn(); 
+			border: solid red 1px;
+			width: 100;
+			text-align: center;
+			
+			div {
+				border: green solid 1px;
+				font-size: @mobilenavfont;
+				height: 25%;
+			}
+		}
 
 		 div{
 			margin: 1rem 0;
