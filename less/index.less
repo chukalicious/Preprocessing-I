@@ -88,31 +88,26 @@ header {
 		display: flex;
 		justify-content: flex-end;
 		
-
-		@media (max-width: 500px) {
-			.flexcolumn(); 
-			border: solid red 1px;
-			width: 100;
-			text-align: center;
-			
-			div {
-				border: green solid 1px;
-				font-size: @mobilenavfont;
-				height: 25%;
-			}
-		}
-
-		 div{
+		div{
 			margin: 1rem 0;
 			padding: 1rem 2rem;
-
 			a {
 				text-decoration: none;
 				&:visited {
 					color: black;
 				}
 			}
-		 }
+		}
+		@media (max-width: 500px) {
+			.flexcolumn(); 
+			/* border: solid red 1px; */
+			width: 100;
+			text-align: center;
+			div {
+				margin: 0;
+				font-size: @mobilenavfont;
+			}
+		}
 	}
 	
 	.hero {

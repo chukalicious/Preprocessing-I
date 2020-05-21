@@ -160,20 +160,6 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-@media (max-width: 500px) {
-  .container header nav {
-    display: flex;
-    flex-direction: column;
-    border: solid red 1px;
-    width: 100;
-    text-align: center;
-  }
-  .container header nav div {
-    border: green solid 1px;
-    font-size: 2.5rem;
-    height: 25%;
-  }
-}
 .container header nav div {
   margin: 1rem 0;
   padding: 1rem 2rem;
@@ -183,6 +169,19 @@ body {
 }
 .container header nav div a:visited {
   color: black;
+}
+@media (max-width: 500px) {
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+    /* border: solid red 1px; */
+    width: 100;
+    text-align: center;
+  }
+  .container header nav div {
+    margin: 0;
+    font-size: 2.5rem;
+  }
 }
 .container header .hero {
   border-radius: 3px;
