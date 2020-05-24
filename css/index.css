@@ -234,9 +234,15 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.container header .hero .call-to-action h3 {
+  font-size: 1.5rem;
+  margin-left: 2.5rem;
+  padding: 0.5rem 0 0.5rem 0;
+}
 .container header .hero .call-to-action p {
   width: 90%;
-  margin: 0 auto 1rem auto;
+  margin: 1rem auto;
+  font-size: larger;
 }
 .container header .hero .call-to-action button {
   color: white;
