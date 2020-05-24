@@ -53,8 +53,10 @@ table {
     box-sizing: border-box;
 }
 
- 
-@accent: #B9B366; 
+
+//the jewels variables
+@accent: #B9B366;  
+@paleyellow: #F3F0C9;
 
 html, body {
 	height: 100%;
@@ -64,7 +66,7 @@ html, body {
 	font-family: 'Open Sans', sans-serif;
 	@media (min-width: 1118px) {
 		h1, h2, h3, p, li {
-			background-color: white;
+			background-color: @paleyellow;
 		}
 	}
 	
@@ -74,10 +76,11 @@ h1, h2, h3, h4 {
 	font-family: 'Libre Caslon Text', serif;
 }
 .container {
-	
+	//variables
 	@headergray: #E9ECEF;
-	@mobilenavfont: 3rem; 
+	@mobilenavfont: 3rem;
 
+	//mixins
 	.buttoncombo {
 		background-color: #C792A4;
 		color: white; 
