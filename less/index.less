@@ -65,10 +65,12 @@ html, body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
-	@media (min-width: 1118px) {
-		h1, h2, h3, p, li {
+	@media @large {
+		/* h1, h2, h3, p, li {
 			background-color: @paleyellow;
-		}
+		} */
+		max-width: 960px;
+		margin: 0 auto; 
 	}
 	
 }

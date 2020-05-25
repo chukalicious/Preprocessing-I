@@ -139,17 +139,13 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 @media (min-width: 1118px) {
-  html h1,
-  body h1,
-  html h2,
-  body h2,
-  html h3,
-  body h3,
-  html p,
-  body p,
-  html li,
-  body li {
-    background-color: #F3F0C9;
+  html,
+  body {
+    /* h1, h2, h3, p, li {
+			background-color: @paleyellow;
+		} */
+    max-width: 960px;
+    margin: 0 auto;
   }
 }
 h1,
