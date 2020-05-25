@@ -424,3 +424,8 @@ h4 {
     border-radius: 0;
   }
 }
+@media (min-width: 1118px) {
+  .container footer p {
+    background-color: #B9B366;
+  }
+}
