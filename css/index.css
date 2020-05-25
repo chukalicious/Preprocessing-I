@@ -319,30 +319,29 @@ h4 {
 .container article section {
   padding: 1rem;
   width: 50%;
-  /* .section-column(); 	 */
 }
-.container article section p {
-  line-height: 1.5rem;
-}
-.container article h2 {
+.container article section h2 {
   font-size: 2rem;
   padding: 1rem;
   margin: auto;
 }
-.container article h3 {
+.container article section p {
+  line-height: 1.5rem;
+}
+.container article section h3 {
   padding: 1rem;
   font-size: 1.5rem;
 }
-.container article ul {
+.container article section ul {
   border-radius: 4px;
   border: #B9B366 solid 0.5px;
   margin-right: 3rem;
 }
-.container article ul .listspacing {
+.container article section ul .listspacing {
   padding: 0.75rem;
   border-bottom: #B9B366 solid 0.5px;
 }
-.container article ul li {
+.container article section ul li {
   padding: 0.75rem;
   border-bottom: #B9B366 solid 0.5px;
 }
@@ -355,6 +354,12 @@ h4 {
   .container article section {
     width: 100%;
     margin: 0 auto;
+  }
+  .container article section h2 {
+    line-height: 2.5rem;
+  }
+  .container article section p {
+    padding-left: 1rem;
   }
 }
 .container .bottom-section {

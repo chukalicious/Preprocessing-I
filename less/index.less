@@ -55,6 +55,7 @@ table {
 
 
 //the jewels variables
+@large: ~"(min-width: 1118px)";
 @accent: #B9B366;  
 @paleyellow: #F3F0C9;
 
@@ -137,7 +138,6 @@ h1, h2, h3, h4 {
 						&:hover {
 							border: solid @accent 1px; 
 							box-shadow: 1px 2px 2px 1px grey;
-							
 						}
 					a:hover {
 						text-decoration: none;
@@ -247,44 +247,41 @@ h1, h2, h3, h4 {
 article {
 	display: flex;
 	margin-bottom: 2rem;
-	
 	.sectionspacing {
 		padding: 1rem; 
 		width: 50%; 
 	}
 	section {
 		.sectionspacing(); 
-		/* .section-column(); 	 */
+		h2 {
+			font-size: 2rem;
+			.title-spacing(); 
+			margin: auto;
+		}
 
-		p{
+		p {
 			line-height: 1.5rem; 
 		}
-	}
-	
-	h2 {
-		font-size: 2rem;
-		.title-spacing(); 
-		margin: auto;
-	}
 
-	h3 {
-		.h3styling(); 
-	}
-
-	ul {
-		border-radius: 4px; 
-		border: @accent solid .5px;
-		margin-right: 3rem;
-
-		.listspacing{
-			padding: .75rem;
-			border-bottom: @accent solid .5px; 
+		h3 {
+			.h3styling(); 
 		}
-	
-		li {
-			.listspacing(); 
+
+		ul {
+			border-radius: 4px; 
+			border: @accent solid .5px;
+			margin-right: 3rem;
+			.listspacing{
+				padding: .75rem;
+				border-bottom: @accent solid .5px; 
+			}
+		
+			li {
+				.listspacing(); 
+			}
 		}
 	}
+
 	@media (max-width: 500px) {
 		.flexcolumn(); 
 		/* border: red solid 1px; */
@@ -292,8 +289,21 @@ article {
 		section {
 			width: 100%; 
 			margin: 0 auto; 
+			h2 {
+				line-height: 2.5rem;
+			}
+			p {
+				padding-left: 1rem;
+			}
 		}
-	}
+	} 
+	
+	
+
+	
+
+	
+	
 }
 	@tablegray: #F2F2F2; 
 
