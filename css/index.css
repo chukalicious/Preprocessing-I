@@ -141,9 +141,6 @@ body {
 @media (min-width: 1118px) {
   html,
   body {
-    /* h1, h2, h3, p, li {
-			background-color: @paleyellow;
-		} */
     max-width: 960px;
     margin: 0 auto;
   }
