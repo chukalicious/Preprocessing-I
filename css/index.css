@@ -1,1 +1,377 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+.container .darkgraycombo {
+  color: white;
+  background-color: #808080;
+}
+.container .flexcolumn {
+  display: flex;
+  flex-direction: column;
+}
+.container header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .container header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.container header nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.container header nav div {
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+}
+.container header nav div a {
+  text-decoration: none;
+}
+.container header nav div a:visited {
+  color: black;
+}
+@media (max-width: 500px) {
+  .container header nav {
+    display: flex;
+    flex-direction: column;
+    /* border: solid red 1px; */
+    width: 100;
+    text-align: center;
+  }
+  .container header nav div {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  .container header nav div:hover {
+    border: solid #808080 1px;
+    box-shadow: 1px 2px 2px 1px grey;
+  }
+}
+.container header .hero {
+  border-radius: 3px;
+  width: 80%;
+  margin: 0 auto 2rem auto;
+  background-color: #E9ECEF;
+}
+.container header .hero img {
+  margin: 5rem 1.5rem 0.5rem 2.5rem;
+}
+.container header .hero h1 {
+  margin: 0.5rem auto 1rem auto;
+  font-size: 3rem;
+  width: 90%;
+}
+.container header .hero h2 {
+  font-size: 2rem;
+  width: 90%;
+  border-bottom: #808080 solid 0.5px;
+  padding-bottom: 1.5rem;
+  margin: 0 auto 2rem auto;
+}
+@media (max-width: 500px) {
+  .container header .hero {
+    width: 95%;
+    margin: 0.3rem auto 0 auto;
+    /* border: green 1px solid; */
+  }
+  .container header .hero section {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container header .hero section img {
+    display: flex;
+    width: 90%;
+    margin: 1rem auto;
+    text-align: center;
+    /* border: solid hotpink 1px; */
+  }
+  .container header .hero section h1 {
+    text-align: left;
+  }
+}
+.container header .hero .call-to-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container header .hero .call-to-action h3 {
+  font-size: 1.5rem;
+  margin-left: 2.5rem;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.container header .hero .call-to-action p {
+  width: 90%;
+  margin: 1rem auto;
+  font-size: larger;
+}
+.container header .hero .call-to-action button {
+  color: white;
+  background-color: #808080;
+  margin: 1rem auto 4rem auto;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-transform: capitalize;
+  border-radius: 7px;
+}
+.container .h3styling {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.container .title-spacing {
+  padding: 1rem;
+}
+.container .section-column {
+  width: 50%;
+  padding: 1rem 2rem;
+}
+.container article {
+  display: flex;
+  margin: 0 3rem 2rem 3rem;
+}
+.container article .articlesectionspacing {
+  width: 50%;
+  margin: 2rem;
+}
+.container article section {
+  width: 50%;
+  padding: 1rem 2rem;
+}
+.container article section h2 {
+  font-size: 2rem;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+.container article section p {
+  line-height: 1.5rem;
+  font-family: 'Lato', sans-serif;
+}
+.container article h3 {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.container article ul {
+  border-radius: 4px;
+  border: #808080 solid 0.5px;
+  margin-right: 3rem;
+}
+.container article ul .listspacing {
+  padding: 0.75rem;
+  border-bottom: #808080 solid 0.5px;
+}
+.container article ul li {
+  padding: 0.75rem;
+  border-bottom: #808080 solid 0.5px;
+}
+@media (max-width: 500px) {
+  .container article {
+    display: flex;
+    flex-direction: column;
+    /* border: red solid 1px; */
+  }
+  .container article section {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.container .bottom-section {
+  display: flex;
+  flex-direction: column;
+  /* border: red 2px solid; */
+  width: 80%;
+  margin: 0 auto;
+  /* table {
+		border: blue solid 1px;
+	} */
+}
+.container .bottom-section h3 {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.container .bottom-section .centertable {
+  font-weight: bold;
+  padding: 1rem;
+}
+.container .bottom-section .centerrow {
+  padding: 1rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container .bottom-section {
+    width: 100%;
+  }
+}
+.container .bottom-section table tr:nth-child(2n) {
+  background-color: #F2F2F2;
+}
+.container .bottom-section table tr td {
+  padding: 1rem;
+  text-align: center;
+  /* border: solid purple 2px; */
+}
+.container .bottom-section table th {
+  font-weight: bold;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  .container .bottom-section table {
+    width: 100%;
+  }
+}
+.container footer {
+  height: 15vh;
+  width: 80%;
+  margin: 2.5rem auto 2rem auto;
+  color: white;
+  background-color: #808080;
+  text-align: center;
+  padding-top: 2rem;
+  border-radius: 3px;
+}
+@media (max-width: 500px) {
+  .container footer {
+    height: 10vh;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+}
